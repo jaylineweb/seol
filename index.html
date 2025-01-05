@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes" />
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta property="og:site_name" content="구리시청 설연휴 종합안내">
+  <meta property="og:url" content="https://www.guri.go.kr/seol/index.html">
+  <meta property="og:title" content="구리시청 설 종합안내">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="website">
+  <link rel="shortcut icon" href="./seol/images/favicon.ico">
+  <link rel="icon" href="./seol/images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="./seol/css/main.css" />
+  <script type="text/javascript" src="./seol/js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="./seol/js/jquery.tab.js"></script>
+  <script type="text/javascript" src="./seol/js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="./seol/js/main.js"></script>
+  <title>구리시청 설연휴 종합안내</title>
+ </head>
+
+ <body id="main">
+ <div class="wrap">
+ 	<header>
+		<div class="link">
+			<a href="https://www.guri.go.kr/www/index.do" target="_blank" rel="noreferrer noopener" title="구리시청 홈페이지로 이동"><span>구리시청 홈페이지</span></a>
+		</div>
+		<div class="visual_area">
+			<img src="./seol/images/visual_title_09.png"	alt="구리시민 여러분, 풍성한 한가위 되세요! 2023 추석 연휴 종합 안내. 연휴기간 : 2023.9.28.(목)~10.03.(화), 추석:9.29.(금)">		
+		</div>
+	</header>
+	<nav class="tab_group">
+		<div class="tab_inner">
+			<ul class="tab_menu">
+				<li class="tab01"><a href="index.html?key=6220" data-key="6220" target="" title=""><i class="icon"></i><span>의료</span></a></li>
+				<li class="tab02"><a href="index.html?key=6221" data-key="6221" target="" title=""><i class="icon"></i><span>민원</span></a></li>
+				<li class="tab03"><a href="index.html?key=6222" data-key="6222" target="" title=""><i class="icon"></i><span>교통</span></a></li>
+				<li class="tab04"><a href="index.html?key=6223" data-key="6223" target="" title=""><i class="icon"></i><span>청소</span></a></li>
+				<li class="tab05"><a href="index.html?key=6224" data-key="6224" target="" title=""><i class="icon"></i><span>성묘</span></a></li>
+				<li class="tab06"><a href="index.html?key=6225" data-key="6225" target="" title=""><i class="icon"></i><span>문화/시설</span></a></li>
+				<li class="tab07"><a href="index.html?key=6226" data-key="6226" target="" title=""><i class="icon"></i><span>신고전화</span></a></li>
+			</ul>			
+		</div>
+	</nav>
+	<div id="container">
+		<div class="wrap contain_wrap">
+			<main id="colgroup" class="colgroup">
+				<article>
+					<div id="contents" class="cts100"><!-- ctsxxx(키번호) -->
+
+					</div><!-- //#contents -->
+					<script>
+						function getParameterByName(name) {
+							name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+							var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+								results = regex.exec(location.search);
+							return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+						}
+						var menukey = getParameterByName('key');
+						/*
+						if(menukey){
+							$.ajax({
+								url : 'contents/'+menukey+'.html',
+								async: false,//true면 동기, false 비동기
+								success : function (data) {
+									$('#contents').attr('class', 'cts'+menukey).append(data);
+								},
+								error:function(request, status, error){
+									console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+								}
+							});
+						} else{
+
+						}
+						*/
+					</script>
+				</article>
+			</main>
+		</div>
+	</div>
+    <!-- //#container -->
+	<a href="#body" id="btnTopScroll" title="상단으로 이동" class="top_btn"><img src="./seol/images/top_btn.png" alt="TOP"></a>
+	
+ </div>
+ <!-- //#wrap -->
+ <footer id="footer">
+	<div class="address margin_t_20">
+		(우)11954 경기도 구리시 아차산로 439 (교문동) TEL. 031-557-1010 ※ 당직실 : 031-550-2221~2 (평일 18시 ~ 익일 09시, 주말 및 공휴일) FAX. 031-557-8282
+	</div>
+	<div class="copylight">COPYRIGHT©GURI CITY. ALL RIGHTS RESERVED.</div>
+</footer>
+
+<script>
+    $(function(){
+    	
+        var jbOffset = $( '.tab_group' ).offset();
+        $( window ).scroll( function() {
+            if ( $( document ).scrollTop() >= jbOffset.top ) {
+            $( '.tab_group' ).addClass( 'jbFixed' );
+            }
+            else {
+            $( '.tab_group' ).removeClass( 'jbFixed' );
+            }
+        });
+
+        $("#btnTopScroll").click(function(){
+            $("body,html").animate({scrollTop:0},300);
+            return false;
+        });
+        $(window).scroll(function(){
+            var scT = $(this).scrollTop();
+            if (scT > 1) {
+                $("#btnTopScroll").css("display","block");
+            }else {
+                $("#btnTopScroll").css("display","none");
+            }
+        });
+    });
+</script>
+  
+ </body>
+</html>

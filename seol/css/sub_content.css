@@ -1,0 +1,57 @@
+
+/* 공통 */
+.temp_mobile_notice{position:relative; padding-left:18px; line-height:24px; color:#3747bc; font-size:13px; font-weight:400; vertical-align:middle;}
+.temp_mobile_notice:before{display:block; position:absolute; top:6px; left:0; width:15px; height:13px; background-repeat:no-repeat; background-image:url(../images/contents/icon_mobile_notice.jpg); content:'';}
+@media all and (min-width:641px){
+	.temp_mobile_notice{display:none;}
+	span.pc{display:inline-block;}
+	a.mobile{display:none;}
+}
+.temp_contactbox .bu li .bu.type2{font-weight:200; color:#4d4d4d}
+
+@media all and (max-width:640px){
+	span.pc{display:none;}
+	a.mobile{display:inline-block;}
+}
+
+
+/* 이미지 확대보기 */
+.box_img .img_zoom {display:block; width:40px; height:40px;}
+.box_img .img_zoom a{padding:13px;}
+
+/* 의료 */
+.cts101_wrap .star01{display:inline-block; font-size:20px; font-weight:bold; color:#5289e3;}
+.cts101_wrap .star02{display:inline-block; font-size:20px; font-weight:bold; color:#d54b7c;}
+.cts101_wrap .box_img{padding:20px 0;}
+
+.cts101_wrap .color01{background-color:#f0f1ff;}
+.cts101_wrap .color02{background-color:#fff3f3;}
+.cts101_wrap p span.color_box{width:70px; height:14px; margin:0 3px; display:inline-block;}
+
+/* 교통 */
+.cts103_wrap .temp_notice.type01{text-align:left; margin-left:65px;}
+@media all and (max-width:1400px){
+	.cts103_wrap .temp_notice.type01{margin-left:auto;}
+}
+
+/* 청소 */
+.cts104_wrap .temp_box.iconbox.type1 .box_title{}
+.cts104_wrap .temp_box.iconbox.type1{min-height:135px;}
+.cts104_wrap .temp_box.iconbox .box_wrap .icon{top:-10px;}
+.cts104_wrap .temp_box.iconbox .box_wrap .box_title .em_b_black{color:#000; font-weight:bold;}
+
+/* 문화 */
+.cts106_wrap .temp_imagebox.type2 .box_wrap{width:380px;}
+.cts106_wrap .temp_imagebox .box_wrap .imagebox .inner_image{height:380px;}
+@media all and (max-width:1400px){
+	.cts106_wrap .temp_imagebox.type2 .box_wrap{width:320px;}
+	.cts106_wrap .temp_imagebox .box_wrap .imagebox .inner_image{height:320px;}
+}
+@media (min-width:800px) and (max-width:1000px){
+	.cts106_wrap .temp_imagebox.type2 .box_wrap{width:320px;}
+	.cts106_wrap .temp_imagebox .box_wrap .imagebox .inner_image{height:320px;}
+}
+
+
+
+

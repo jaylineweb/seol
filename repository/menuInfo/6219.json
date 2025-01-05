@@ -1,0 +1,27 @@
+{
+    "menuNo" : "6219",
+    "upperMenuNo" : "0",
+    "siteId" : "seol", 
+    "menuNm" : "구리시청 설연휴 종합안내", 
+    "cntntsNm" : "구리시청 설연휴 종합안내", 
+    "menuTy" : "MNTY01",
+    "innerFile" : "",
+    "iframeUrl" : "",
+    "iframeStyle" : "",
+    "linkTrget" : "_self", 
+    "menuUrl" : "/seol/contents.do?key=6220", 
+    "tabMenuUseAt" : "N", 
+	"tabMenuTy" : "",
+    "deptCode" : "", 
+    "deptNm" : "", 
+    "emplCode" : "", 
+    "emplNm" : "", 
+    "emplTelno" : "",
+    "cntntsLastUpdusrPnttm" : "2024.01.16",
+    "naviList" : [
+    ],
+    "cntntsEvlNo" : "0",
+    "koglUseAt" : "N",
+    "koglTy" : "KOGLTY01",
+    "menuShowAt" : "Y"
+}

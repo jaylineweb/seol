@@ -1,0 +1,27 @@
+{
+    "menuNo" : "6226",
+    "upperMenuNo" : "6219",
+    "siteId" : "seol", 
+    "menuNm" : "신고전화", 
+    "cntntsNm" : "신고전화", 
+    "menuTy" : "MNTY02",
+    "innerFile" : "",
+    "iframeUrl" : "",
+    "iframeStyle" : "",
+    "linkTrget" : "_self", 
+    "menuUrl" : "/seol/contents.do?key=6226", 
+    "tabMenuUseAt" : "N", 
+	"tabMenuTy" : "TABMENUTY1",
+    "deptCode" : "39800820000", 
+    "deptNm" : "정보통신과", 
+    "emplCode" : "HONG3012", 
+    "emplNm" : "홍도이", 
+    "emplTelno" : "031-550-2089",
+    "cntntsLastUpdusrPnttm" : "2024.03.07",
+    "naviList" : [
+    ],
+    "cntntsEvlNo" : "0",
+    "koglUseAt" : "N",
+    "koglTy" : "SITE_DEFAULT",
+    "menuShowAt" : "Y"
+}
