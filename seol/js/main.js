@@ -18,7 +18,7 @@ $(function(){
 		Datakey = Datakey.replace(",","");
 		if(IsActive==false){
 			$.ajax({
-				url : '../repository/contents/'+Datakey+'.html',
+				url : '../../repository/contents/'+Datakey+'.html',
 				success : function (data) {
 					$('#contents').empty().attr('class', 'cts'+Datakey).append(data);
 					$('#contents').find('table.responsive').not($('.prettyprint').children()).each(function() {
