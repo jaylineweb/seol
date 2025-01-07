@@ -50,17 +50,25 @@
 
 /* GmarketSans */
 @font-face{
-	font-family: 'GmarketSans';
+	font-family: 'GmarketSansLight';
 	font-weight: 200;
 	src: url("../font/GmarketSansLight.woff") format('woff');
 }
 @font-face{
-	font-family: 'GmarketSans';
+	font-family: 'GmarketSansMedium';
 	font-weight: 400;
 	src: url("../font/GmarketSansMedium.woff") format('woff');
 }
 @font-face{
-	font-family: 'GmarketSans';
+	font-family: 'GmarketSansBold';
 	font-weight: 600;
 	src: url("../font/GmarketSansBold.woff") format('woff');
+}
+
+/*여기 어때 잘난체*/
+@font-face {
+	font-family:'yg-jalnan';
+	src:url('../font/JalnanOTF00.woff') format('woff');
+	font-weight:normal;
+	font-style:normal;
 }
